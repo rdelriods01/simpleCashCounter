@@ -1,4 +1,67 @@
+* {
+  font-family: "Product Sans";
+}
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  background-image: linear-gradient(to right top, #04297a, #45319a, #7a34b5, #b12eca, #eb12d8);
+}
+section {
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 2em;
+  border-radius: 20px;
+}
+h1,
+span {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(circle, #eb12d8, #c030da, #933dd8, #6143d1, #0b45c6);
+}
+img {
+  width: 110px;
+  height: 50px;
+  margin: 6px 0;
+  vertical-align: middle;
+  transition: all 0.4s ease-in-out;
+}
+img:hover {
+  transform: scale(1.2);
+}
+input {
+  height: 3em;
+  width: 8em;
+  margin: 0 2em;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+p {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 1em 4em;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  outline: none;
+}
+#btntotal:hover {
+  color: white;
+  background-color: #c030da;
+}
+#btnborrar:hover {
+  color: white;
+  background-color: #0b45c6;
+}
+span {
+  margin: auto;
+  width: 5em;
+  font-size: 2em;
 }

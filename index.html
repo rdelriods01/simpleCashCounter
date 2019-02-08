@@ -6,39 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Simple Cash Counter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 
 <body>
-    <header> Simple Cash Counter</header>
     <section>
+        <h1> Simple Cash Counter</h1>
         <div class="quinientos">
-            <img src="" alt="500">
-            <input type="number" id="to500">
+            <img src="assets/500.jpg" alt="500">
+            <input inputmode="numeric" type="text" id="to500" oninput="this.value=handleInput(this.value)" value="0">
         </div>
         <div class="doscientos">
-            <img src="" alt="200">
-            <input type="number" id="to200">
+            <img src="assets/200.jpg" alt="200">
+            <input inputmode="numeric" type="text" id="to200" oninput="this.value=handleInput(this.value)" value="0">
         </div>
         <div class="cien">
-            <img src="" alt="100">
-            <input type="number" id="to100">
+            <img src="assets/100.jpg" alt="100">
+            <input inputmode="numeric" type="text" id="to100" oninput="this.value=handleInput(this.value)" value="0">
         </div>
         <div class="cincuenta">
-            <img src="" alt="50">
-            <input type="number" id="to50">
+            <img src="assets/50.jpg" alt="50">
+            <input inputmode="numeric" type="text" id="to50" oninput="this.value=handleInput(this.value)" value="0">
         </div>
         <div class="veinte">
-            <img src="" alt="20">
-            <input type="number" id="to20">
+            <img src="assets/20.jpg" alt="20">
+            <input inputmode="numeric" type="text" id="to20" oninput="this.value=handleInput(this.value)" value="0">
         </div>
+        <p>
+            <button id="btntotal" onclick=sumar()>Total</button>
+            <span id="total">0</span>
+            <button id="btnborrar" onclick=reset()>Borrar</button>
+        </p>
     </section>
-    <footer>
-        <button onclick=sumar()>Total</button>
-        <p id="total">0</p>
-        <button onclick=reset()>Borrar</button>
-    </footer>
 </body>
 
 </html>
