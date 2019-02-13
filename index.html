@@ -12,34 +12,43 @@
 </head>
 
 <body>
-    <section>
-        <h1> Simple Cash Counter</h1>
-        <div class="quinientos">
-            <img src="assets/500.jpg" alt="500">
-            <input inputmode="numeric" type="text" id="to500" oninput="this.value=handleInput(this.value)" value="0">
-        </div>
-        <div class="doscientos">
-            <img src="assets/200.jpg" alt="200">
-            <input inputmode="numeric" type="text" id="to200" oninput="this.value=handleInput(this.value)" value="0">
-        </div>
-        <div class="cien">
-            <img src="assets/100.jpg" alt="100">
-            <input inputmode="numeric" type="text" id="to100" oninput="this.value=handleInput(this.value)" value="0">
-        </div>
-        <div class="cincuenta">
-            <img src="assets/50.jpg" alt="50">
-            <input inputmode="numeric" type="text" id="to50" oninput="this.value=handleInput(this.value)" value="0">
-        </div>
-        <div class="veinte">
-            <img src="assets/20.jpg" alt="20">
-            <input inputmode="numeric" type="text" id="to20" oninput="this.value=handleInput(this.value)" value="0">
-        </div>
-        <p>
-            <button id="btntotal" onclick=sumar()>Total</button>
-            <span id="total">0</span>
-            <button id="btnborrar" onclick=reset()>Borrar</button>
-        </p>
-    </section>
+    <div class="all">
+        <section id="card">
+            <div class="elements">
+                <h1> Simple Cash Counter</h1>
+                <div class="quinientos">
+                    <img src="assets/500.jpg" alt="500">
+                    <input inputmode="numeric" type="text" id="to500" oninput="this.value=handleInput(this.value)"
+                        value="0">
+                </div>
+                <div class="doscientos">
+                    <img src="assets/200.jpg" alt="200">
+                    <input inputmode="numeric" type="text" id="to200" oninput="this.value=handleInput(this.value)"
+                        value="0">
+                </div>
+                <div class="cien">
+                    <img src="assets/100.jpg" alt="100">
+                    <input inputmode="numeric" type="text" id="to100" oninput="this.value=handleInput(this.value)"
+                        value="0">
+                </div>
+                <div class="cincuenta">
+                    <img src="assets/50.jpg" alt="50">
+                    <input inputmode="numeric" type="text" id="to50" oninput="this.value=handleInput(this.value)"
+                        value="0">
+                </div>
+                <div class="veinte">
+                    <img src="assets/20.jpg" alt="20">
+                    <input inputmode="numeric" type="text" id="to20" oninput="this.value=handleInput(this.value)"
+                        value="0">
+                </div>
+                <p>
+                    <button id="btntotal" onclick=sumar()>Total</button>
+                    <span id="total">0</span>
+                    <button id="btnborrar" onclick=reset()>Borrar</button>
+                </p>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>

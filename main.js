@@ -23,3 +23,14 @@ handleInput = (value) => {
         return parseInt(value.replace(/[^0-9]/g, ''), 10)
     }
 }
+
+window.onload = () => {
+    const card = document.getElementById('card');
+    card.classList.add('loadCard');
+    const img = document.getElementsByTagName('img')
+    const input = document.getElementsByTagName('input')
+    for (let i = 0; i <= img.length; i++) {
+        img[i].classList.add('loadImg')
+        input[i].classList.add('loadInput')
+    }
+}
